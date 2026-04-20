@@ -14,7 +14,7 @@
 | Role     | Email                  | Password  |
 |----------|------------------------|-----------|
 | Customer | customer@lincesckf.com | Test1234! |
-| Brand    | brand@lincesckf.com    | Test1234! |
+| Brand    | brand1@lincesckf.com    | Test1234! |
 
 > You can also register a new account directly on the site.
 
