@@ -1,0 +1,44 @@
+/* Sen, Adhiraj — Student ID: 1002264465 */
+/* Sharma, Anvay — Student ID: 1002298454 */
+/* Seethini, Bhanu Shankar — Student ID: 1002279766 */
+/* Tatineni, Naga Vamsi Krishna — Student ID: 1002331579 */
+/* Singireddy, Sai Shubhkar Reddy — Student ID: 1002320766 */
+
+/*
+ * Design Tokens
+ * -------------
+ * Colors:
+ *   --ink:  #0F172B  (dark navy — primary text and UI elements)
+ *   --silk: #F6F2ED  (warm off-white — page/nav background)
+ *   --gold: #C7A35B  (antique gold — primary CTA buttons, accents)
+ *   --rose: #E7D7CF  (dusty rose — hero card background, subtle highlights)
+ *
+ * Typography:
+ *   Display (headings): ui-serif, Georgia, serif
+ *   Body (paragraphs, UI): ui-sans-serif, system-ui, sans-serif
+ *
+ * Shadows:
+ *   soft: 0 10px 30px rgba(15, 23, 43, 0.08)  (card elevation)
+ *
+ * Framework: Tailwind CSS v3 (no Bootstrap used)
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :focus-visible { outline: 3px solid rgba(199, 163, 91, .6); outline-offset: 3px; }
+}
+
+@layer components {
+  .container-page { @apply mx-auto max-w-6xl px-4 sm:px-6 lg:px-8; }
+  .card { @apply rounded-2xl bg-white shadow-soft ring-1 ring-black/5; }
+  .btn { @apply inline-flex items-center justify-center rounded-xl px-4 py-2 text-sm font-semibold transition; }
+  .btn-primary { @apply btn bg-ink text-white hover:bg-ink/90; }
+  .btn-ghost { @apply btn bg-transparent text-ink hover:bg-black/5; }
+  .btn-gold { @apply btn bg-gold text-white hover:bg-gold/90; }
+  .input { @apply w-full rounded-xl border border-black/10 bg-white px-3 py-2 text-sm shadow-sm focus:border-gold focus:ring-gold; }
+  .label { @apply text-sm font-medium text-ink/80; }
+  .muted { @apply text-sm text-ink/60; }
+}
