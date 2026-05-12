@@ -1,6 +1,5 @@
 # lincesckf E-Commerce — Phase 3 README
 ## CSE-5335 Web Data Management
-**Team:** Sen, Sharma, Seethini, Tatineni, Singireddy
 
 ---
 
